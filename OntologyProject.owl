@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstDivisionLeague -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstDivisionLeague">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowDivisionLeague -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowDivisionLeague">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondDivisionLeague -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondDivisionLeague">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TopТeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TopТeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
