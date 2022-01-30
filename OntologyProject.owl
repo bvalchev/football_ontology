@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3">
-    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -124,6 +124,21 @@
         <ObjectProperty IRI="#competesOn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasInRoster"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hosts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBornIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHomelandOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isHostedIn"/>
     </Declaration>
     <Declaration>
@@ -145,7 +160,19 @@
         <DataProperty IRI="#hasAppearances"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasAssistsMade"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGoalsScored"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumTropheys"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isAged"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isWorth"/>
@@ -179,6 +206,20 @@
         <Class IRI="#Team"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hosts"/>
+            <Class IRI="#League"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isHomelandOf"/>
+            <Class IRI="#Player"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Defender"/>
         <Class IRI="#Position"/>
     </SubClassOf>
@@ -203,6 +244,13 @@
     <SubClassOf>
         <Class IRI="#FirstDivisionLeague"/>
         <Class IRI="#League"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstDivisionLeague"/>
+        <DataMinCardinality cardinality="500000000">
+            <DataProperty IRI="#tvRightsRevenue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Forward"/>
@@ -231,16 +279,86 @@
         <Class IRI="#Stadium"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HighCapacityStadium"/>
+        <DataMinCardinality cardinality="25000">
+            <DataProperty IRI="#hasCapacity"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCapacityStadium"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#canHostEuropeMatches"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#League"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#Team"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#League"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isHostedIn"/>
+            <Class IRI="#Country"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#League"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#tvRightsRevenue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LowCapacityStadium"/>
         <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCapacityStadium"/>
+        <DataMaxCardinality cardinality="5000">
+            <DataProperty IRI="#hasCapacity"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowDivisionLeague"/>
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LowDivisionLeague"/>
+        <DataMaxCardinality cardinality="100000000">
+            <DataProperty IRI="#tvRightsRevenue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MidCapacityStadium"/>
         <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidCapacityStadium"/>
+        <DataMinCardinality cardinality="5000">
+            <DataProperty IRI="#hasCapacity"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidCapacityStadium"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#canHostEuropeMatches"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidCapacityStadium"/>
+        <DataMaxCardinality cardinality="25000">
+            <DataProperty IRI="#hasCapacity"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MideuropeCountry"/>
@@ -269,6 +387,62 @@
         <Class IRI="#Team"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Player"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isBornIn"/>
+            <Class IRI="#Country"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAppearances"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAssistsMade"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasGoalsScored"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasNumTropheys"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isAged"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isWorth"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayerRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Position"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Playmaker"/>
         <Class IRI="#PlayerRole"/>
     </SubClassOf>
@@ -291,6 +465,13 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Position"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#PlayerRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ProspectPlayer"/>
         <Class IRI="#Player"/>
     </SubClassOf>
@@ -298,6 +479,13 @@
         <Class IRI="#ProspectPlayer"/>
         <DataMaxCardinality cardinality="50">
             <DataProperty IRI="#hasAppearances"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProspectPlayer"/>
+        <DataMaxCardinality cardinality="24">
+            <DataProperty IRI="#isAged"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataMaxCardinality>
     </SubClassOf>
@@ -310,8 +498,36 @@
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SecondDivisionLeague"/>
+        <DataMinCardinality cardinality="100000000">
+            <DataProperty IRI="#tvRightsRevenue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondDivisionLeague"/>
+        <DataMaxCardinality cardinality="500000000">
+            <DataProperty IRI="#tvRightsRevenue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SmallТeam"/>
         <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadium"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#canHostEuropeMatches"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadium"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCapacity"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StarPlayer"/>
@@ -358,6 +574,27 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Team"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#competesOn"/>
+            <Class IRI="#League"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInRoster"/>
+            <Class IRI="#Player"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasNumTropheys"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ToptableТeam"/>
         <Class IRI="#Team"/>
     </SubClassOf>
@@ -369,6 +606,13 @@
         <Class IRI="#VeteranPlayer"/>
         <DataMinCardinality cardinality="600">
             <DataProperty IRI="#hasAppearances"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeteranPlayer"/>
+        <DataMinCardinality cardinality="32">
+            <DataProperty IRI="#isAged"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataMinCardinality>
     </SubClassOf>
@@ -507,9 +751,37 @@
         <Class IRI="#FirstDivisionLeague"/>
         <NamedIndividual IRI="#Premier_League"/>
     </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#competesOn"/>
+        <ObjectProperty IRI="#includes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hosts"/>
+        <ObjectProperty IRI="#isHostedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBornIn"/>
+        <ObjectProperty IRI="#isHomelandOf"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#competesOn"/>
         <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hosts"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#League"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBornIn"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isHostedIn"/>
@@ -528,6 +800,10 @@
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#playsIn"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
@@ -538,6 +814,22 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#competesOn"/>
         <Class IRI="#League"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hosts"/>
+        <Class IRI="#League"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBornIn"/>
+        <Class IRI="#Country"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isHostedIn"/>
@@ -568,8 +860,28 @@
         <Class IRI="#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasCapacity"/>
         <Class IRI="#Stadium"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumTropheys"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumTropheys"/>
+        <Class IRI="#Team"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isAged"/>
+        <Class IRI="#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isWorth"/>
@@ -581,15 +893,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#tvRightsRevenue"/>
-        <Class IRI="#FirstDivisionLeague"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <Class IRI="#LowDivisionLeague"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#League"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#canHostEuropeMatches"/>
@@ -600,7 +904,23 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasCapacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumTropheys"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isAged"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
