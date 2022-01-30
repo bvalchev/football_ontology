@@ -1,351 +1,621 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstDivisionLeague -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstDivisionLeague">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowDivisionLeague -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowDivisionLeague">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondDivisionLeague -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondDivisionLeague">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TopТeam -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TopТeam">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
-    </owl:Class>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AnchorMan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BalkanCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigТeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuropeanCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstDivisionLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goalkeeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCapacityStadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#League"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowCapacityStadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowDivisionLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MidCapacityStadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MideuropeCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Midfielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MidtableТeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayerRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Playmaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProspectPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelegationTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondDivisionLeague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallТeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StarPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperstarPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TargetMan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToptableТeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeteranPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WesternCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wingback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#competesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHostedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlayingRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAppearances"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isWorth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numChampionsLeagueSpots"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tvRightsRevenue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Premier_League"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AnchorMan"/>
+        <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnchorMan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Midfielder"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BalkanCountry"/>
+        <Class IRI="#EuropeanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigТeam"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defender"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defender"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#Sweeper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defender"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#Wingback"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuropeanCountry"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#League"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forward"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#Poacher"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#TargetMan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goalkeeper"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCapacityStadium"/>
+        <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCapacityStadium"/>
+        <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowDivisionLeague"/>
+        <Class IRI="#League"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidCapacityStadium"/>
+        <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MideuropeCountry"/>
+        <Class IRI="#EuropeanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Midfielder"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Midfielder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#AnchorMan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Midfielder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlayingRole"/>
+            <Class IRI="#Playmaker"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidtableТeam"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Playmaker"/>
+        <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Playmaker"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Midfielder"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poacher"/>
+        <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poacher"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Forward"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProspectPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProspectPlayer"/>
+        <DataMaxCardinality cardinality="50">
+            <DataProperty IRI="#hasAppearances"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelegationTeam"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#League"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallТeam"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StarPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StarPlayer"/>
+        <DataMinCardinality cardinality="10000000">
+            <DataProperty IRI="#isWorth"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperstarPlayer"/>
+        <Class IRI="#StarPlayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperstarPlayer"/>
+        <DataMinCardinality cardinality="50000000">
+            <DataProperty IRI="#isWorth"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweeper"/>
+        <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweeper"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Defender"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TargetMan"/>
+        <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TargetMan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Forward"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToptableТeam"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeteranPlayer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeteranPlayer"/>
+        <DataMinCardinality cardinality="600">
+            <DataProperty IRI="#hasAppearances"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WesternCountry"/>
+        <Class IRI="#EuropeanCountry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wingback"/>
+        <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wingback"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPlayingPosition"/>
+            <Class IRI="#Defender"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AnchorMan"/>
+        <Class IRI="#Poacher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchorMan"/>
+        <Class IRI="#Sweeper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchorMan"/>
+        <Class IRI="#TargetMan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchorMan"/>
+        <Class IRI="#Wingback"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BalkanCountry"/>
+        <Class IRI="#MideuropeCountry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BalkanCountry"/>
+        <Class IRI="#WesternCountry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BigТeam"/>
+        <Class IRI="#SmallТeam"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Defender"/>
+        <Class IRI="#Goalkeeper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#LowDivisionLeague"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#SecondDivisionLeague"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Forward"/>
+        <Class IRI="#Goalkeeper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Goalkeeper"/>
+        <Class IRI="#Midfielder"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighCapacityStadium"/>
+        <Class IRI="#LowCapacityStadium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighCapacityStadium"/>
+        <Class IRI="#MidCapacityStadium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowCapacityStadium"/>
+        <Class IRI="#MidCapacityStadium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowDivisionLeague"/>
+        <Class IRI="#SecondDivisionLeague"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MideuropeCountry"/>
+        <Class IRI="#WesternCountry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MidtableТeam"/>
+        <Class IRI="#RelegationTeam"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MidtableТeam"/>
+        <Class IRI="#ToptableТeam"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Playmaker"/>
+        <Class IRI="#Poacher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Playmaker"/>
+        <Class IRI="#Sweeper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Playmaker"/>
+        <Class IRI="#TargetMan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Playmaker"/>
+        <Class IRI="#Wingback"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Poacher"/>
+        <Class IRI="#Sweeper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Poacher"/>
+        <Class IRI="#Wingback"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ProspectPlayer"/>
+        <Class IRI="#VeteranPlayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RelegationTeam"/>
+        <Class IRI="#ToptableТeam"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sweeper"/>
+        <Class IRI="#TargetMan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TargetMan"/>
+        <Class IRI="#Wingback"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#FirstDivisionLeague"/>
+        <NamedIndividual IRI="#Premier_League"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#competesOn"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHostedIn"/>
+        <Class IRI="#League"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <Class IRI="#PlayerRole"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsIn"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsOn"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#competesOn"/>
+        <Class IRI="#League"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHostedIn"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <Class IRI="#PlayerRole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsIn"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsOn"/>
+        <Class IRI="#Stadium"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+        <Class IRI="#Stadium"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAppearances"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCapacity"/>
+        <Class IRI="#Stadium"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isWorth"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <Class IRI="#FirstDivisionLeague"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <Class IRI="#FirstDivisionLeague"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <Class IRI="#LowDivisionLeague"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <Class IRI="#SecondDivisionLeague"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAppearances"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCapacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isWorth"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
 
 
 
