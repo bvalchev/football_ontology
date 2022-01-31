@@ -247,10 +247,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FirstDivisionLeague"/>
-        <DataMinCardinality cardinality="500000000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#tvRightsRevenue"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Forward"/>
@@ -280,10 +285,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighCapacityStadium"/>
-        <DataMinCardinality cardinality="25000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#hasCapacity"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighCapacityStadium"/>
@@ -319,10 +329,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowCapacityStadium"/>
-        <DataMaxCardinality cardinality="5000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#hasCapacity"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMaxCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowDivisionLeague"/>
@@ -330,10 +345,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowDivisionLeague"/>
-        <DataMaxCardinality cardinality="100000000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#tvRightsRevenue"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMaxCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MidCapacityStadium"/>
@@ -341,10 +361,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MidCapacityStadium"/>
-        <DataMinCardinality cardinality="5000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#hasCapacity"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MidCapacityStadium"/>
@@ -352,13 +380,6 @@
             <DataProperty IRI="#canHostEuropeMatches"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MidCapacityStadium"/>
-        <DataMaxCardinality cardinality="25000">
-            <DataProperty IRI="#hasCapacity"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MideuropeCountry"/>
@@ -477,17 +498,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProspectPlayer"/>
-        <DataMaxCardinality cardinality="50">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#hasAppearances"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMaxCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProspectPlayer"/>
-        <DataMaxCardinality cardinality="24">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#isAged"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMaxCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RelegationTeam"/>
@@ -499,17 +530,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SecondDivisionLeague"/>
-        <DataMinCardinality cardinality="100000000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#tvRightsRevenue"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SecondDivisionLeague"/>
-        <DataMaxCardinality cardinality="500000000">
-            <DataProperty IRI="#tvRightsRevenue"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMaxCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SmallТeam"/>
@@ -519,7 +551,7 @@
         <Class IRI="#Stadium"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#canHostEuropeMatches"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -535,10 +567,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StarPlayer"/>
-        <DataMinCardinality cardinality="10000000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#isWorth"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SuperstarPlayer"/>
@@ -546,10 +583,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SuperstarPlayer"/>
-        <DataMinCardinality cardinality="50000000">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#isWorth"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000000</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sweeper"/>
@@ -604,17 +646,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VeteranPlayer"/>
-        <DataMinCardinality cardinality="600">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#hasAppearances"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VeteranPlayer"/>
-        <DataMinCardinality cardinality="32">
+        <DataSomeValuesFrom>
             <DataProperty IRI="#isAged"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataMinCardinality>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WesternCountry"/>
