@@ -244,6 +244,176 @@
         <NamedIndividual IRI="#Premier_League"/>
     </Declaration>
     <EquivalentClasses>
+        <Class IRI="#BigТeam"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Team"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#competesOn"/>
+                <Class IRI="#FirstDivisionLeague"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasMarketValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Defender"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Position"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isPlayingRole"/>
+                    <Class IRI="#Sweeper"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isPlayingRole"/>
+                    <Class IRI="#Wingback"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FirstDivisionLeague"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#League"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#numChampionsLeagueSpots"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#tvRightsRevenue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Forward"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Position"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isPlayingRole"/>
+                    <Class IRI="#Poacher"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isPlayingRole"/>
+                    <Class IRI="#TargetMan"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HighCapacityStadium"/>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Stadium"/>
+                <DataHasValue>
+                    <DataProperty IRI="#canHostEuropeMatches"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasCapacity"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LowCapacityStadium"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Stadium"/>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasCapacity"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Stadium"/>
+                <DataHasValue>
+                    <DataProperty IRI="#canHostEuropeMatches"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LowDivisionLeague"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#League"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#tvRightsRevenue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MidCapacityStadium"/>
+        <ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Stadium"/>
+                <DataHasValue>
+                    <DataProperty IRI="#canHostEuropeMatches"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasCapacity"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Midfielder"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Position"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isPlayingRole"/>
+                    <Class IRI="#AnchorMan"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isPlayingRole"/>
+                    <Class IRI="#Playmaker"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#ProspectPlayer"/>
         <ObjectIntersectionOf>
             <Class IRI="#Player"/>
@@ -276,6 +446,224 @@
             </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SecondDivisionLeague"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#League"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#tvRightsRevenue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StarPlayer"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Player"/>
+                <ObjectIntersectionOf>
+                    <ObjectUnionOf>
+                        <DataSomeValuesFrom>
+                            <DataProperty IRI="#hasAssistsMade"/>
+                            <DatatypeRestriction>
+                                <Datatype abbreviatedIRI="xsd:integer"/>
+                                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">130</Literal>
+                                </FacetRestriction>
+                            </DatatypeRestriction>
+                        </DataSomeValuesFrom>
+                        <DataSomeValuesFrom>
+                            <DataProperty IRI="#hasGoalsScored"/>
+                            <DatatypeRestriction>
+                                <Datatype abbreviatedIRI="xsd:integer"/>
+                                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                                </FacetRestriction>
+                            </DatatypeRestriction>
+                        </DataSomeValuesFrom>
+                    </ObjectUnionOf>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="#isPlayingPosition"/>
+                        <Class IRI="#Midfielder"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#isWorth"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000000</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Defender"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Forward"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasGoalsScored"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Goalkeeper"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SuperstarPlayer"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#StarPlayer"/>
+                <ObjectIntersectionOf>
+                    <ObjectUnionOf>
+                        <DataSomeValuesFrom>
+                            <DataProperty IRI="#hasAssistsMade"/>
+                            <DatatypeRestriction>
+                                <Datatype abbreviatedIRI="xsd:integer"/>
+                                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">180</Literal>
+                                </FacetRestriction>
+                            </DatatypeRestriction>
+                        </DataSomeValuesFrom>
+                        <DataSomeValuesFrom>
+                            <DataProperty IRI="#hasGoalsScored"/>
+                            <DatatypeRestriction>
+                                <Datatype abbreviatedIRI="xsd:integer"/>
+                                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+                                </FacetRestriction>
+                            </DatatypeRestriction>
+                        </DataSomeValuesFrom>
+                    </ObjectUnionOf>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="#isPlayingPosition"/>
+                        <Class IRI="#Midfielder"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#isWorth"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000000</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Defender"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">140</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Forward"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasGoalsScored"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Goalkeeper"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">160</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VeteranPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAppearances"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#isAged"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AnchorMan"/>
         <Class IRI="#PlayerRole"/>
@@ -287,25 +675,6 @@
     <SubClassOf>
         <Class IRI="#BigТeam"/>
         <Class IRI="#Team"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BigТeam"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#competesOn"/>
-            <Class IRI="#FirstDivisionLeague"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BigТeam"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasMarketValue"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300000000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
@@ -326,20 +695,6 @@
         <Class IRI="#Position"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Defender"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#Sweeper"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Defender"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#Wingback"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#EuropeanCountry"/>
         <Class IRI="#Country"/>
     </SubClassOf>
@@ -348,41 +703,8 @@
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FirstDivisionLeague"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#numChampionsLeagueSpots"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FirstDivisionLeague"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#tvRightsRevenue"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Forward"/>
         <Class IRI="#Position"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Forward"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#Poacher"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Forward"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#TargetMan"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Goalkeeper"/>
@@ -391,25 +713,6 @@
     <SubClassOf>
         <Class IRI="#HighCapacityStadium"/>
         <Class IRI="#Stadium"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCapacityStadium"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasCapacity"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCapacityStadium"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#canHostEuropeMatches"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#League"/>
@@ -437,58 +740,12 @@
         <Class IRI="#Stadium"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowCapacityStadium"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasCapacity"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#LowDivisionLeague"/>
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowDivisionLeague"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#tvRightsRevenue"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#MidCapacityStadium"/>
         <Class IRI="#Stadium"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MidCapacityStadium"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasCapacity"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000</Literal>
-                </FacetRestriction>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MidCapacityStadium"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#canHostEuropeMatches"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MideuropeCountry"/>
@@ -497,20 +754,6 @@
     <SubClassOf>
         <Class IRI="#Midfielder"/>
         <Class IRI="#Position"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Midfielder"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#AnchorMan"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Midfielder"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#Playmaker"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MidtableТeam"/>
@@ -644,21 +887,6 @@
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SecondDivisionLeague"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#tvRightsRevenue"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
-                </FacetRestriction>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SmallТeam"/>
         <Class IRI="#Team"/>
     </SubClassOf>
@@ -707,184 +935,8 @@
         <Class IRI="#Player"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StarPlayer"/>
-        <ObjectUnionOf>
-            <ObjectIntersectionOf>
-                <ObjectUnionOf>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#hasAssistsMade"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:integer"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">130</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#hasGoalsScored"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:integer"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                </ObjectUnionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Midfielder"/>
-                </ObjectAllValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Defender"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Forward"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasGoalsScored"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Goalkeeper"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StarPlayer"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#isWorth"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SuperstarPlayer"/>
         <Class IRI="#StarPlayer"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SuperstarPlayer"/>
-        <ObjectUnionOf>
-            <ObjectIntersectionOf>
-                <ObjectUnionOf>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#hasAssistsMade"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:integer"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">180</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                    <DataSomeValuesFrom>
-                        <DataProperty IRI="#hasGoalsScored"/>
-                        <DatatypeRestriction>
-                            <Datatype abbreviatedIRI="xsd:integer"/>
-                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
-                            </FacetRestriction>
-                        </DatatypeRestriction>
-                    </DataSomeValuesFrom>
-                </ObjectUnionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Midfielder"/>
-                </ObjectAllValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Defender"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">140</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Forward"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasGoalsScored"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Goalkeeper"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">160</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SuperstarPlayer"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#isWorth"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000000</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sweeper"/>
@@ -941,30 +993,6 @@
     <SubClassOf>
         <Class IRI="#VeteranPlayer"/>
         <Class IRI="#Player"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VeteranPlayer"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasAppearances"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VeteranPlayer"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#isAged"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WesternCountry"/>
@@ -1268,6 +1296,11 @@
         <DataProperty IRI="#hasCapacity"/>
         <NamedIndividual IRI="#Etihad"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAppearances"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">549</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAssistsMade"/>
