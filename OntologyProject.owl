@@ -175,6 +175,9 @@
         <DataProperty IRI="#hasMarketValue"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasNumCleanSheets"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasNumTropheys"/>
     </Declaration>
     <Declaration>
@@ -190,8 +193,89 @@
         <DataProperty IRI="#tvRightsRevenue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Belgium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brazil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Central_Playmaker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Etihad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Left_Poacher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ligue1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neymar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PSG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parc_des_princes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phil_Foden"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Premier_League"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ProspectPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Player"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAppearances"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#isAged"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#isWorth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AnchorMan"/>
         <Class IRI="#PlayerRole"/>
@@ -262,6 +346,13 @@
     <SubClassOf>
         <Class IRI="#FirstDivisionLeague"/>
         <Class IRI="#League"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstDivisionLeague"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#numChampionsLeagueSpots"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FirstDivisionLeague"/>
@@ -485,6 +576,13 @@
     <SubClassOf>
         <Class IRI="#Player"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#hasNumCleanSheets"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#hasNumTropheys"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
@@ -521,30 +619,6 @@
     <SubClassOf>
         <Class IRI="#ProspectPlayer"/>
         <Class IRI="#Player"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProspectPlayer"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasAppearances"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProspectPlayer"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#isAged"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RelegationTeam"/>
@@ -634,6 +708,82 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StarPlayer"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectUnionOf>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#hasAssistsMade"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">130</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#hasGoalsScored"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectUnionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Midfielder"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Defender"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Forward"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasGoalsScored"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Goalkeeper"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StarPlayer"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#isWorth"/>
             <DatatypeRestriction>
@@ -647,6 +797,82 @@
     <SubClassOf>
         <Class IRI="#SuperstarPlayer"/>
         <Class IRI="#StarPlayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperstarPlayer"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectUnionOf>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#hasAssistsMade"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">180</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#hasGoalsScored"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectUnionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Midfielder"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Defender"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">140</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Forward"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasGoalsScored"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#isPlayingPosition"/>
+                    <Class IRI="#Goalkeeper"/>
+                </ObjectAllValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#hasNumCleanSheets"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">160</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SuperstarPlayer"/>
@@ -865,9 +1091,284 @@
         <Class IRI="#Wingback"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#WesternCountry"/>
+        <NamedIndividual IRI="#Belgium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Brazil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Midfielder"/>
+        <NamedIndividual IRI="#CM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Playmaker"/>
+        <NamedIndividual IRI="#Central_Playmaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WesternCountry"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Etihad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WesternCountry"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forward"/>
+        <NamedIndividual IRI="#LW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poacher"/>
+        <NamedIndividual IRI="#Left_Poacher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FirstDivisionLeague"/>
+        <NamedIndividual IRI="#Ligue1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Neymar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#PSG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Parc_des_princes"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#FirstDivisionLeague"/>
         <NamedIndividual IRI="#Premier_League"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHomelandOf"/>
+        <NamedIndividual IRI="#Belgium"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHomelandOf"/>
+        <NamedIndividual IRI="#Brazil"/>
+        <NamedIndividual IRI="#Neymar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <NamedIndividual IRI="#CM"/>
+        <NamedIndividual IRI="#Central_Playmaker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHomelandOf"/>
+        <NamedIndividual IRI="#England"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Ligue1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <NamedIndividual IRI="#CM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsIn"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <NamedIndividual IRI="#LW"/>
+        <NamedIndividual IRI="#Left_Poacher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHostedIn"/>
+        <NamedIndividual IRI="#Ligue1"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competesOn"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#Premier_League"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsOn"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#Etihad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBornIn"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <NamedIndividual IRI="#Brazil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsIn"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <NamedIndividual IRI="#PSG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competesOn"/>
+        <NamedIndividual IRI="#PSG"/>
+        <NamedIndividual IRI="#Ligue1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsOn"/>
+        <NamedIndividual IRI="#PSG"/>
+        <NamedIndividual IRI="#Parc_des_princes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <NamedIndividual IRI="#LW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsIn"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Premier_League"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHostedIn"/>
+        <NamedIndividual IRI="#Premier_League"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+        <NamedIndividual IRI="#Etihad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCapacity"/>
+        <NamedIndividual IRI="#Etihad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">185</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">121</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAged"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWorth"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <NamedIndividual IRI="#Ligue1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">850000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLeaguePosition"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAppearances"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">452</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">265</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAged"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWorth"/>
+        <NamedIndividual IRI="#Neymar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLeaguePosition"/>
+        <NamedIndividual IRI="#PSG"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+        <NamedIndividual IRI="#Parc_des_princes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCapacity"/>
+        <NamedIndividual IRI="#Parc_des_princes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAppearances"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">188</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">59</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAged"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWorth"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">76500000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <NamedIndividual IRI="#Premier_League"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5100000000</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#competesOn"/>
         <ObjectProperty IRI="#includes"/>
@@ -989,6 +1490,10 @@
         <Class IRI="#Team"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasNumCleanSheets"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasNumTropheys"/>
         <Class IRI="#Player"/>
     </DataPropertyDomain>
@@ -1034,6 +1539,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasMarketValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumCleanSheets"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
