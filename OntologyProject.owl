@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2022/0/football_ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3">
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/football_ontology">
     <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,285 +13,298 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#AnchorMan"/>
+        <Class IRI="#SuperstarTeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BalkanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BigТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Country"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Defender"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EuropeanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FirstTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Forward"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Goalkeeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HighCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MidCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MideuropeCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Midfielder"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MidtableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ProspectPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RelegationTeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SecondTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Stadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StarPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SuperstarPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sweeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TargetMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ToptableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VeteranPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ToptableТeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#WesternCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#VeteranPlayer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Wingback"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#competesOn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasInRoster"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hosts"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#includes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isBornIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isHomelandOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isHostedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPlayingPosition"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPlayingRole"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#playsIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#playsOn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#canHostEuropeMatches"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAppearances"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAssistsMade"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasGoalsScored"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasLeaguePosition"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasMarketValue"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasNumCleanSheets"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasNumTropheys"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isAged"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumTropheys"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isWorth"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#tvRightsRevenue"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Adams_Park"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adams_Park"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Belgium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Brazil"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Belgium"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Bulgaria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Brazil"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CM"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Bulgaria"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Central_Playmaker"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Central_Target_Man"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Central_Playmaker"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EFL1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Central_Target_Man"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Efbet_Liga"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#England"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Etihad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Etihad"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#France"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#LW"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Left_Poacher"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LW"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Ligue1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Left_Poacher"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Neymar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PSG"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Parc_des_princes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Parc_des_princes"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Premier_League"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RW"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Premier_League"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Right_Poacher"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RW"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ST"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Right_Poacher"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ST"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadion_Bulgarska_Armia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#BigТeam"/>
+        <Class IRI="#SuperstarTeam"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Team"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#competesOn"/>
-                <Class IRI="#FirstTierLeague"/>
+                <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
             </ObjectSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasMarketValue"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -302,27 +315,27 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Defender"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Position"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
             <ObjectUnionOf>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#isPlayingRole"/>
-                    <Class IRI="#Sweeper"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
                 </ObjectSomeValuesFrom>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#isPlayingRole"/>
-                    <Class IRI="#Wingback"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
                 </ObjectSomeValuesFrom>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#FirstTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
         <ObjectIntersectionOf>
-            <Class IRI="#League"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#numChampionsLeagueSpots"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -331,7 +344,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#tvRightsRevenue"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -342,33 +355,33 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Forward"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Position"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
             <ObjectUnionOf>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#isPlayingRole"/>
-                    <Class IRI="#Poacher"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
                 </ObjectSomeValuesFrom>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#isPlayingRole"/>
-                    <Class IRI="#TargetMan"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
                 </ObjectSomeValuesFrom>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#HighCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium"/>
         <ObjectIntersectionOf>
             <ObjectIntersectionOf>
-                <Class IRI="#Stadium"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
                 <DataHasValue>
-                    <DataProperty IRI="#canHostEuropeMatches"/>
+                    <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
                     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
                 </DataHasValue>
             </ObjectIntersectionOf>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasCapacity"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -379,12 +392,12 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#LowCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium"/>
         <ObjectUnionOf>
             <ObjectIntersectionOf>
-                <Class IRI="#Stadium"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
                 <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasCapacity"/>
+                    <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
                     <DatatypeRestriction>
                         <Datatype abbreviatedIRI="xsd:integer"/>
                         <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -394,20 +407,20 @@
                 </DataSomeValuesFrom>
             </ObjectIntersectionOf>
             <ObjectIntersectionOf>
-                <Class IRI="#Stadium"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
                 <DataHasValue>
-                    <DataProperty IRI="#canHostEuropeMatches"/>
+                    <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
                     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
                 </DataHasValue>
             </ObjectIntersectionOf>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#LowTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
         <ObjectIntersectionOf>
-            <Class IRI="#League"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#tvRightsRevenue"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -418,17 +431,17 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MidCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium"/>
         <ObjectIntersectionOf>
             <ObjectIntersectionOf>
-                <Class IRI="#Stadium"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
                 <DataHasValue>
-                    <DataProperty IRI="#canHostEuropeMatches"/>
+                    <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
                     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
                 </DataHasValue>
             </ObjectIntersectionOf>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasCapacity"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -442,27 +455,27 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Midfielder"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Position"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
             <ObjectUnionOf>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#isPlayingRole"/>
-                    <Class IRI="#AnchorMan"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
                 </ObjectSomeValuesFrom>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#isPlayingRole"/>
-                    <Class IRI="#Playmaker"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
                 </ObjectSomeValuesFrom>
             </ObjectUnionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MidtableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Team"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasLeaguePosition"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -476,11 +489,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#ProspectPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Player"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAppearances"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -489,7 +502,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#isAged"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -498,7 +511,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#isWorth"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -509,11 +522,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#RelegationTeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Team"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasLeaguePosition"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -527,11 +540,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#SecondTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
         <ObjectIntersectionOf>
-            <Class IRI="#League"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#numChampionsLeagueSpots"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -540,7 +553,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#tvRightsRevenue"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -554,21 +567,21 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Team"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
             <ObjectUnionOf>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#competesOn"/>
-                    <Class IRI="#LowTierLeague"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
                 </ObjectSomeValuesFrom>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#competesOn"/>
-                    <Class IRI="#SecondTierLeague"/>
+                    <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+                    <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
                 </ObjectSomeValuesFrom>
             </ObjectUnionOf>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasMarketValue"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -579,14 +592,14 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#StarPlayer"/>
-        <ObjectUnionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+            <ObjectUnionOf>
                 <ObjectIntersectionOf>
                     <ObjectUnionOf>
                         <DataSomeValuesFrom>
-                            <DataProperty IRI="#hasAssistsMade"/>
+                            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
                             <DatatypeRestriction>
                                 <Datatype abbreviatedIRI="xsd:integer"/>
                                 <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -595,7 +608,7 @@
                             </DatatypeRestriction>
                         </DataSomeValuesFrom>
                         <DataSomeValuesFrom>
-                            <DataProperty IRI="#hasGoalsScored"/>
+                            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
                             <DatatypeRestriction>
                                 <Datatype abbreviatedIRI="xsd:integer"/>
                                 <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -604,77 +617,77 @@
                             </DatatypeRestriction>
                         </DataSomeValuesFrom>
                     </ObjectUnionOf>
-                    <ObjectAllValuesFrom>
-                        <ObjectProperty IRI="#isPlayingPosition"/>
-                        <Class IRI="#Midfielder"/>
-                    </ObjectAllValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
+                    </ObjectSomeValuesFrom>
                 </ObjectIntersectionOf>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#isWorth"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000000</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Defender"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Forward"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasGoalsScored"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Goalkeeper"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender"/>
+                    </ObjectSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
+                    </ObjectSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
+                    </ObjectSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectUnionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#SuperstarPlayer"/>
-        <ObjectUnionOf>
-            <ObjectIntersectionOf>
-                <Class IRI="#StarPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
+            <ObjectUnionOf>
                 <ObjectIntersectionOf>
                     <ObjectUnionOf>
                         <DataSomeValuesFrom>
-                            <DataProperty IRI="#hasAssistsMade"/>
+                            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
                             <DatatypeRestriction>
                                 <Datatype abbreviatedIRI="xsd:integer"/>
                                 <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -683,7 +696,7 @@
                             </DatatypeRestriction>
                         </DataSomeValuesFrom>
                         <DataSomeValuesFrom>
-                            <DataProperty IRI="#hasGoalsScored"/>
+                            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
                             <DatatypeRestriction>
                                 <Datatype abbreviatedIRI="xsd:integer"/>
                                 <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -692,74 +705,74 @@
                             </DatatypeRestriction>
                         </DataSomeValuesFrom>
                     </ObjectUnionOf>
-                    <ObjectAllValuesFrom>
-                        <ObjectProperty IRI="#isPlayingPosition"/>
-                        <Class IRI="#Midfielder"/>
-                    </ObjectAllValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
+                    </ObjectSomeValuesFrom>
                 </ObjectIntersectionOf>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#isWorth"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000000</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Defender"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">140</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Forward"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasGoalsScored"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#isPlayingPosition"/>
-                    <Class IRI="#Goalkeeper"/>
-                </ObjectAllValuesFrom>
-                <DataSomeValuesFrom>
-                    <DataProperty IRI="#hasNumCleanSheets"/>
-                    <DatatypeRestriction>
-                        <Datatype abbreviatedIRI="xsd:integer"/>
-                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">160</Literal>
-                        </FacetRestriction>
-                    </DatatypeRestriction>
-                </DataSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender"/>
+                    </ObjectSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">140</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
+                    </ObjectSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+                        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
+                    </ObjectSomeValuesFrom>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:integer"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">160</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectUnionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#ToptableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ToptableТeam"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Team"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasLeaguePosition"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -770,11 +783,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#VeteranPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#VeteranPlayer"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Player"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAppearances"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -783,7 +796,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#isAged"/>
+                <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -794,239 +807,242 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#AnchorMan"/>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="#SuperstarTeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BalkanCountry"/>
-        <Class IRI="#EuropeanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BigТeam"/>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Country"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Country"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hosts"/>
-            <Class IRI="#League"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+                <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Country"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isHomelandOf"/>
-            <Class IRI="#Player"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Defender"/>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#EuropeanCountry"/>
-        <Class IRI="#Country"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FirstTierLeague"/>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Forward"/>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Goalkeeper"/>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HighCapacityStadium"/>
-        <Class IRI="#Stadium"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#includes"/>
-            <Class IRI="#Team"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isHostedIn"/>
-            <Class IRI="#Country"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#tvRightsRevenue"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowCapacityStadium"/>
-        <Class IRI="#Stadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowTierLeague"/>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MidCapacityStadium"/>
-        <Class IRI="#Stadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MideuropeCountry"/>
-        <Class IRI="#EuropeanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Midfielder"/>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MidtableТeam"/>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingPosition"/>
-            <Class IRI="#Position"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#isBornIn"/>
-            <Class IRI="#Country"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#playsIn"/>
-            <Class IRI="#Team"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasAppearances"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasAssistsMade"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasGoalsScored"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasNumCleanSheets"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasNumTropheys"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumTropheys"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#isAged"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#isWorth"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Playmaker"/>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Poacher"/>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Position"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isPlayingRole"/>
-            <Class IRI="#PlayerRole"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ProspectPlayer"/>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RelegationTeam"/>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SecondTierLeague"/>
-        <Class IRI="#League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SmallТeam"/>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#competesOn"/>
-            <Class IRI="#LowTierLeague"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#competesOn"/>
-            <Class IRI="#SecondTierLeague"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasMarketValue"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
             <DatatypeRestriction>
                 <Datatype abbreviatedIRI="xsd:integer"/>
                 <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1036,969 +1052,974 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Stadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Stadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#canHostEuropeMatches"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Stadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasCapacity"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StarPlayer"/>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SuperstarPlayer"/>
-        <Class IRI="#StarPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SuperstarPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#StarPlayer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sweeper"/>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TargetMan"/>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#competesOn"/>
-            <Class IRI="#League"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasInRoster"/>
-            <Class IRI="#Player"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+            <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasLeaguePosition"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasMarketValue"/>
+            <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ToptableТeam"/>
-        <Class IRI="#Team"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ToptableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#VeteranPlayer"/>
-        <Class IRI="#Player"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#VeteranPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#WesternCountry"/>
-        <Class IRI="#EuropeanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EuropeanCountry"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Wingback"/>
-        <Class IRI="#PlayerRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#AnchorMan"/>
-        <Class IRI="#Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#AnchorMan"/>
-        <Class IRI="#Sweeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#AnchorMan"/>
-        <Class IRI="#TargetMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#AnchorMan"/>
-        <Class IRI="#Wingback"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#AnchorMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BalkanCountry"/>
-        <Class IRI="#MideuropeCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BalkanCountry"/>
-        <Class IRI="#WesternCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BigТeam"/>
-        <Class IRI="#SmallТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BigТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SmallТeam"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Defender"/>
-        <Class IRI="#Goalkeeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Defender"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#FirstTierLeague"/>
-        <Class IRI="#LowTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#FirstTierLeague"/>
-        <Class IRI="#SecondTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Forward"/>
-        <Class IRI="#Goalkeeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Goalkeeper"/>
-        <Class IRI="#Midfielder"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Goalkeeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#HighCapacityStadium"/>
-        <Class IRI="#LowCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#HighCapacityStadium"/>
-        <Class IRI="#MidCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#HighCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#LowCapacityStadium"/>
-        <Class IRI="#MidCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowCapacityStadium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidCapacityStadium"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#LowTierLeague"/>
-        <Class IRI="#SecondTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LowTierLeague"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#SecondTierLeague"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#MideuropeCountry"/>
-        <Class IRI="#WesternCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MideuropeCountry"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#MidtableТeam"/>
-        <Class IRI="#RelegationTeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#MidtableТeam"/>
-        <Class IRI="#ToptableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#MidtableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ToptableТeam"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Playmaker"/>
-        <Class IRI="#Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Playmaker"/>
-        <Class IRI="#Sweeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Playmaker"/>
-        <Class IRI="#TargetMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Playmaker"/>
-        <Class IRI="#Wingback"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Poacher"/>
-        <Class IRI="#Sweeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Poacher"/>
-        <Class IRI="#Wingback"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#ProspectPlayer"/>
-        <Class IRI="#VeteranPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ProspectPlayer"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#VeteranPlayer"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#RelegationTeam"/>
-        <Class IRI="#ToptableТeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RelegationTeam"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ToptableТeam"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Sweeper"/>
-        <Class IRI="#TargetMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Sweeper"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#TargetMan"/>
-        <Class IRI="#Wingback"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wingback"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Stadium"/>
-        <NamedIndividual IRI="#Adams_Park"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adams_Park"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#WesternCountry"/>
-        <NamedIndividual IRI="#Belgium"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Belgium"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Country"/>
-        <NamedIndividual IRI="#Brazil"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Brazil"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BalkanCountry"/>
-        <NamedIndividual IRI="#Bulgaria"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#BalkanCountry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Bulgaria"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Midfielder"/>
-        <NamedIndividual IRI="#CM"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Midfielder"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CM"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Team"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Playmaker"/>
-        <NamedIndividual IRI="#Central_Playmaker"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Playmaker"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Central_Playmaker"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#TargetMan"/>
-        <NamedIndividual IRI="#Central_Target_Man"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#TargetMan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Central_Target_Man"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#League"/>
-        <NamedIndividual IRI="#EFL1"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#League"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#WesternCountry"/>
-        <NamedIndividual IRI="#England"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Stadium"/>
-        <NamedIndividual IRI="#Etihad"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Etihad"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#WesternCountry"/>
-        <NamedIndividual IRI="#France"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#WesternCountry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#France"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Forward"/>
-        <NamedIndividual IRI="#LW"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LW"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Poacher"/>
-        <NamedIndividual IRI="#Left_Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Left_Poacher"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FirstTierLeague"/>
-        <NamedIndividual IRI="#Ligue1"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Team"/>
-        <NamedIndividual IRI="#Manchester_City"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Team"/>
-        <NamedIndividual IRI="#PSG"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Stadium"/>
-        <NamedIndividual IRI="#Parc_des_princes"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Parc_des_princes"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FirstTierLeague"/>
-        <NamedIndividual IRI="#Premier_League"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#FirstTierLeague"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Premier_League"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Forward"/>
-        <NamedIndividual IRI="#RW"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Forward"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RW"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Poacher"/>
-        <NamedIndividual IRI="#Right_Poacher"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Poacher"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Right_Poacher"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Position"/>
-        <NamedIndividual IRI="#ST"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ST"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Stadium"/>
-        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadion_Bulgarska_Armia"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Team"/>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isBornIn"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
-        <NamedIndividual IRI="#England"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingPosition"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
-        <NamedIndividual IRI="#ST"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ST"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsIn"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHomelandOf"/>
-        <NamedIndividual IRI="#Belgium"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Belgium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHomelandOf"/>
-        <NamedIndividual IRI="#Brazil"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Brazil"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hosts"/>
-        <NamedIndividual IRI="#Bulgaria"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Bulgaria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHomelandOf"/>
-        <NamedIndividual IRI="#Bulgaria"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Bulgaria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingRole"/>
-        <NamedIndividual IRI="#CM"/>
-        <NamedIndividual IRI="#Central_Playmaker"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CM"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Central_Playmaker"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#competesOn"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsOn"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
-        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadion_Bulgarska_Armia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHostedIn"/>
-        <NamedIndividual IRI="#EFL1"/>
-        <NamedIndividual IRI="#England"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includes"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHostedIn"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
-        <NamedIndividual IRI="#Bulgaria"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Bulgaria"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHomelandOf"/>
-        <NamedIndividual IRI="#England"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hosts"/>
-        <NamedIndividual IRI="#France"/>
-        <NamedIndividual IRI="#Ligue1"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#France"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isBornIn"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
-        <NamedIndividual IRI="#Bulgaria"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Bulgaria"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingPosition"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
-        <NamedIndividual IRI="#RW"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RW"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsIn"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isBornIn"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
-        <NamedIndividual IRI="#Belgium"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Belgium"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingPosition"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
-        <NamedIndividual IRI="#CM"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CM"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsIn"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
-        <NamedIndividual IRI="#Manchester_City"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingRole"/>
-        <NamedIndividual IRI="#LW"/>
-        <NamedIndividual IRI="#Left_Poacher"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LW"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Left_Poacher"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includes"/>
-        <NamedIndividual IRI="#Ligue1"/>
-        <NamedIndividual IRI="#PSG"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHostedIn"/>
-        <NamedIndividual IRI="#Ligue1"/>
-        <NamedIndividual IRI="#France"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#France"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#competesOn"/>
-        <NamedIndividual IRI="#Manchester_City"/>
-        <NamedIndividual IRI="#Premier_League"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Premier_League"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <NamedIndividual IRI="#Manchester_City"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <NamedIndividual IRI="#Manchester_City"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsOn"/>
-        <NamedIndividual IRI="#Manchester_City"/>
-        <NamedIndividual IRI="#Etihad"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Etihad"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isBornIn"/>
-        <NamedIndividual IRI="#Neymar"/>
-        <NamedIndividual IRI="#Brazil"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Brazil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsIn"/>
-        <NamedIndividual IRI="#Neymar"/>
-        <NamedIndividual IRI="#PSG"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LW"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#competesOn"/>
-        <NamedIndividual IRI="#PSG"/>
-        <NamedIndividual IRI="#Ligue1"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <NamedIndividual IRI="#PSG"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsOn"/>
-        <NamedIndividual IRI="#PSG"/>
-        <NamedIndividual IRI="#Parc_des_princes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isBornIn"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
-        <NamedIndividual IRI="#England"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Parc_des_princes"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingPosition"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
-        <NamedIndividual IRI="#LW"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsIn"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
-        <NamedIndividual IRI="#Manchester_City"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#LW"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includes"/>
-        <NamedIndividual IRI="#Premier_League"/>
-        <NamedIndividual IRI="#Manchester_City"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHostedIn"/>
-        <NamedIndividual IRI="#Premier_League"/>
-        <NamedIndividual IRI="#England"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Premier_League"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingRole"/>
-        <NamedIndividual IRI="#RW"/>
-        <NamedIndividual IRI="#Right_Poacher"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Premier_League"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPlayingRole"/>
-        <NamedIndividual IRI="#ST"/>
-        <NamedIndividual IRI="#Central_Target_Man"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#RW"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Right_Poacher"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#competesOn"/>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
-        <NamedIndividual IRI="#EFL1"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#ST"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Central_Target_Man"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#playsOn"/>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
-        <NamedIndividual IRI="#EFL1"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#canHostEuropeMatches"/>
-        <NamedIndividual IRI="#Adams_Park"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adams_Park"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasCapacity"/>
-        <NamedIndividual IRI="#Adams_Park"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adams_Park"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAppearances"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">728</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAssistsMade"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasGoalsScored"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">212</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isAged"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isWorth"/>
-        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Adebayo_Akinfenwa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasLeaguePosition"/>
-        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#CSKA_Sofia"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numChampionsLeagueSpots"/>
-        <NamedIndividual IRI="#EFL1"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <NamedIndividual IRI="#EFL1"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#EFL1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numChampionsLeagueSpots"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <NamedIndividual IRI="#Efbet_Liga"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Efbet_Liga"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">110000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#canHostEuropeMatches"/>
-        <NamedIndividual IRI="#Etihad"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Etihad"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasCapacity"/>
-        <NamedIndividual IRI="#Etihad"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Etihad"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAppearances"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">194</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAssistsMade"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasGoalsScored"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isAged"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isWorth"/>
-        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Georgi_Yomov"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">495000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAppearances"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">549</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAssistsMade"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">185</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasGoalsScored"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">121</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isAged"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isWorth"/>
-        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Kevin_DeBryune"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numChampionsLeagueSpots"/>
-        <NamedIndividual IRI="#Ligue1"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <NamedIndividual IRI="#Ligue1"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Ligue1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">850000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasLeaguePosition"/>
-        <NamedIndividual IRI="#Manchester_City"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Manchester_City"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAppearances"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">452</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAssistsMade"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">205</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasGoalsScored"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">265</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isAged"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isWorth"/>
-        <NamedIndividual IRI="#Neymar"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Neymar"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasLeaguePosition"/>
-        <NamedIndividual IRI="#PSG"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PSG"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#canHostEuropeMatches"/>
-        <NamedIndividual IRI="#Parc_des_princes"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Parc_des_princes"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasCapacity"/>
-        <NamedIndividual IRI="#Parc_des_princes"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Parc_des_princes"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47900</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAppearances"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">188</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAssistsMade"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasGoalsScored"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">59</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isAged"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#isWorth"/>
-        <NamedIndividual IRI="#Phil_Foden"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Phil_Foden"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">76500000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <NamedIndividual IRI="#Premier_League"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Premier_League"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5100000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#canHostEuropeMatches"/>
-        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadion_Bulgarska_Armia"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasCapacity"/>
-        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadion_Bulgarska_Armia"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasLeaguePosition"/>
-        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Wycombe_Wanderers"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#competesOn"/>
-        <ObjectProperty IRI="#includes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <ObjectProperty IRI="#playsIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hosts"/>
-        <ObjectProperty IRI="#isHostedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isBornIn"/>
-        <ObjectProperty IRI="#isHomelandOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#competesOn"/>
-        <Class IRI="#Team"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <Class IRI="#Team"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hosts"/>
-        <Class IRI="#Country"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#includes"/>
-        <Class IRI="#League"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isBornIn"/>
-        <Class IRI="#Player"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isHomelandOf"/>
-        <Class IRI="#Country"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isHostedIn"/>
-        <Class IRI="#League"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPlayingPosition"/>
-        <Class IRI="#Player"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPlayingRole"/>
-        <Class IRI="#Position"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#playsIn"/>
-        <Class IRI="#Player"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#playsOn"/>
-        <Class IRI="#Team"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#competesOn"/>
-        <Class IRI="#League"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#competesOn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasInRoster"/>
-        <Class IRI="#Player"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasInRoster"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hosts"/>
-        <Class IRI="#League"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hosts"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#includes"/>
-        <Class IRI="#Team"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#includes"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isBornIn"/>
-        <Class IRI="#Country"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isBornIn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isHomelandOf"/>
-        <Class IRI="#Player"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHomelandOf"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isHostedIn"/>
-        <Class IRI="#Country"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isHostedIn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Country"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPlayingPosition"/>
-        <Class IRI="#Position"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingPosition"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Position"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPlayingRole"/>
-        <Class IRI="#PlayerRole"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isPlayingRole"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#PlayerRole"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#playsIn"/>
-        <Class IRI="#Team"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsIn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#playsOn"/>
-        <Class IRI="#Stadium"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#playsOn"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty IRI="#canHostEuropeMatches"/>
-        <Class IRI="#Stadium"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasAppearances"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasAssistsMade"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasCapacity"/>
-        <Class IRI="#Stadium"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Stadium"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasGoalsScored"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasLeaguePosition"/>
-        <Class IRI="#Team"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasMarketValue"/>
-        <Class IRI="#Team"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Team"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasNumCleanSheets"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasNumTropheys"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumTropheys"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#isAged"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#isWorth"/>
-        <Class IRI="#Player"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#numChampionsLeagueSpots"/>
-        <Class IRI="#League"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#tvRightsRevenue"/>
-        <Class IRI="#League"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
+        <Class IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#League"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#canHostEuropeMatches"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#canHostEuropeMatches"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasAppearances"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAppearances"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasAssistsMade"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasAssistsMade"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasCapacity"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasCapacity"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasGoalsScored"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasGoalsScored"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasLeaguePosition"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasLeaguePosition"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasMarketValue"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasMarketValue"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasNumCleanSheets"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumCleanSheets"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasNumTropheys"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#hasNumTropheys"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#isAged"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isAged"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#isWorth"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#isWorth"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#numChampionsLeagueSpots"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#tvRightsRevenue"/>
+        <DataProperty IRI="http://www.semanticweb.org/lenovo/ontologies/2022/0/untitled-ontology-3#tvRightsRevenue"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
 </Ontology>
