@@ -31,7 +31,7 @@
         <Class IRI="#EuropeanCountry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#FirstTierLeague"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Forward"/>
@@ -49,7 +49,7 @@
         <Class IRI="#LowCapacityStadium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowDivisionLeague"/>
+        <Class IRI="#LowTierLeague"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MidCapacityStadium"/>
@@ -85,7 +85,7 @@
         <Class IRI="#RelegationTeam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#SecondTierLeague"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SmallТeam"/>
@@ -193,16 +193,37 @@
         <DataProperty IRI="#tvRightsRevenue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Adams_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Belgium"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Brazil"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CM"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Central_Playmaker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Central_Target_Man"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EFL1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Efbet_Liga"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#England"/>
@@ -212,6 +233,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Kevin_DeBryune"/>
@@ -243,13 +267,28 @@
     <Declaration>
         <NamedIndividual IRI="#Premier_League"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right_Poacher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#BigТeam"/>
         <ObjectIntersectionOf>
             <Class IRI="#Team"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#competesOn"/>
-                <Class IRI="#FirstDivisionLeague"/>
+                <Class IRI="#FirstTierLeague"/>
             </ObjectSomeValuesFrom>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#hasMarketValue"/>
@@ -279,12 +318,17 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#FirstTierLeague"/>
         <ObjectIntersectionOf>
             <Class IRI="#League"/>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#numChampionsLeagueSpots"/>
-                <Datatype abbreviatedIRI="xsd:integer"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#tvRightsRevenue"/>
@@ -359,7 +403,7 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#LowDivisionLeague"/>
+        <Class IRI="#LowTierLeague"/>
         <ObjectIntersectionOf>
             <Class IRI="#League"/>
             <DataSomeValuesFrom>
@@ -414,6 +458,24 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#MidtableТeam"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Team"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasLeaguePosition"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#ProspectPlayer"/>
         <ObjectIntersectionOf>
             <Class IRI="#Player"/>
@@ -447,18 +509,70 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#RelegationTeam"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Team"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasLeaguePosition"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SecondTierLeague"/>
         <ObjectIntersectionOf>
             <Class IRI="#League"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#numChampionsLeagueSpots"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#tvRightsRevenue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
                         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
                     </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
                         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SmallТeam"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Team"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#competesOn"/>
+                    <Class IRI="#LowTierLeague"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#competesOn"/>
+                    <Class IRI="#SecondTierLeague"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasMarketValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300000000</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
@@ -641,6 +755,21 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#ToptableТeam"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Team"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasLeaguePosition"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#VeteranPlayer"/>
         <ObjectIntersectionOf>
             <Class IRI="#Player"/>
@@ -699,7 +828,7 @@
         <Class IRI="#Country"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#FirstTierLeague"/>
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
@@ -740,7 +869,7 @@
         <Class IRI="#Stadium"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowDivisionLeague"/>
+        <Class IRI="#LowTierLeague"/>
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
@@ -758,21 +887,6 @@
     <SubClassOf>
         <Class IRI="#MidtableТeam"/>
         <Class IRI="#Team"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MidtableТeam"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasLeaguePosition"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
-                </FacetRestriction>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Player"/>
@@ -868,22 +982,7 @@
         <Class IRI="#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RelegationTeam"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasLeaguePosition"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
-                </FacetRestriction>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#SecondTierLeague"/>
         <Class IRI="#League"/>
     </SubClassOf>
     <SubClassOf>
@@ -894,14 +993,14 @@
         <Class IRI="#SmallТeam"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#competesOn"/>
-            <Class IRI="#LowDivisionLeague"/>
+            <Class IRI="#LowTierLeague"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SmallТeam"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#competesOn"/>
-            <Class IRI="#SecondDivisionLeague"/>
+            <Class IRI="#SecondTierLeague"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -979,18 +1078,6 @@
         <Class IRI="#Team"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ToptableТeam"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasLeaguePosition"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#VeteranPlayer"/>
         <Class IRI="#Player"/>
     </SubClassOf>
@@ -1035,12 +1122,12 @@
         <Class IRI="#Goalkeeper"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#FirstDivisionLeague"/>
-        <Class IRI="#LowDivisionLeague"/>
+        <Class IRI="#FirstTierLeague"/>
+        <Class IRI="#LowTierLeague"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#FirstDivisionLeague"/>
-        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#FirstTierLeague"/>
+        <Class IRI="#SecondTierLeague"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Forward"/>
@@ -1063,8 +1150,8 @@
         <Class IRI="#MidCapacityStadium"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#LowDivisionLeague"/>
-        <Class IRI="#SecondDivisionLeague"/>
+        <Class IRI="#LowTierLeague"/>
+        <Class IRI="#SecondTierLeague"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#MideuropeCountry"/>
@@ -1119,6 +1206,14 @@
         <Class IRI="#Wingback"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Adams_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#WesternCountry"/>
         <NamedIndividual IRI="#Belgium"/>
     </ClassAssertion>
@@ -1127,12 +1222,32 @@
         <NamedIndividual IRI="#Brazil"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BalkanCountry"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Midfielder"/>
         <NamedIndividual IRI="#CM"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Playmaker"/>
         <NamedIndividual IRI="#Central_Playmaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TargetMan"/>
+        <NamedIndividual IRI="#Central_Target_Man"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#League"/>
+        <NamedIndividual IRI="#EFL1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#League"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#WesternCountry"/>
@@ -1148,6 +1263,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
         <NamedIndividual IRI="#Kevin_DeBryune"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1159,7 +1278,7 @@
         <NamedIndividual IRI="#Left_Poacher"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#FirstTierLeague"/>
         <NamedIndividual IRI="#Ligue1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1179,9 +1298,48 @@
         <NamedIndividual IRI="#Parc_des_princes"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FirstTierLeague"/>
         <NamedIndividual IRI="#Premier_League"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forward"/>
+        <NamedIndividual IRI="#RW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poacher"/>
+        <NamedIndividual IRI="#Right_Poacher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#ST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBornIn"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="#ST"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsIn"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isHomelandOf"/>
         <NamedIndividual IRI="#Belgium"/>
@@ -1193,9 +1351,49 @@
         <NamedIndividual IRI="#Neymar"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHomelandOf"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isPlayingRole"/>
         <NamedIndividual IRI="#CM"/>
         <NamedIndividual IRI="#Central_Playmaker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competesOn"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsOn"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHostedIn"/>
+        <NamedIndividual IRI="#EFL1"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHostedIn"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
+        <NamedIndividual IRI="#Bulgaria"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isHomelandOf"/>
@@ -1206,6 +1404,26 @@
         <ObjectProperty IRI="#hosts"/>
         <NamedIndividual IRI="#France"/>
         <NamedIndividual IRI="#Ligue1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBornIn"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingPosition"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <NamedIndividual IRI="#RW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsIn"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBornIn"/>
+        <NamedIndividual IRI="#Kevin_DeBryune"/>
+        <NamedIndividual IRI="#Belgium"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isPlayingPosition"/>
@@ -1221,6 +1439,11 @@
         <ObjectProperty IRI="#isPlayingRole"/>
         <NamedIndividual IRI="#LW"/>
         <NamedIndividual IRI="#Left_Poacher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Ligue1"/>
+        <NamedIndividual IRI="#PSG"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isHostedIn"/>
@@ -1263,9 +1486,19 @@
         <NamedIndividual IRI="#Ligue1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <NamedIndividual IRI="#PSG"/>
+        <NamedIndividual IRI="#Neymar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsOn"/>
         <NamedIndividual IRI="#PSG"/>
         <NamedIndividual IRI="#Parc_des_princes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBornIn"/>
+        <NamedIndividual IRI="#Phil_Foden"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isPlayingPosition"/>
@@ -1287,6 +1520,91 @@
         <NamedIndividual IRI="#Premier_League"/>
         <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <NamedIndividual IRI="#RW"/>
+        <NamedIndividual IRI="#Right_Poacher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayingRole"/>
+        <NamedIndividual IRI="#ST"/>
+        <NamedIndividual IRI="#Central_Target_Man"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#competesOn"/>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="#EFL1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsOn"/>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <NamedIndividual IRI="#EFL1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+        <NamedIndividual IRI="#Adams_Park"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCapacity"/>
+        <NamedIndividual IRI="#Adams_Park"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAppearances"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">728</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">212</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAged"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWorth"/>
+        <NamedIndividual IRI="#Adebayo_Akinfenwa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLeaguePosition"/>
+        <NamedIndividual IRI="#CSKA_Sofia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <NamedIndividual IRI="#EFL1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <NamedIndividual IRI="#EFL1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tvRightsRevenue"/>
+        <NamedIndividual IRI="#Efbet_Liga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">110000000</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#canHostEuropeMatches"/>
         <NamedIndividual IRI="#Etihad"/>
@@ -1296,6 +1614,31 @@
         <DataProperty IRI="#hasCapacity"/>
         <NamedIndividual IRI="#Etihad"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAppearances"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">194</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssistsMade"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoalsScored"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAged"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWorth"/>
+        <NamedIndividual IRI="#Georgi_Yomov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">495000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAppearances"/>
@@ -1321,6 +1664,11 @@
         <DataProperty IRI="#isWorth"/>
         <NamedIndividual IRI="#Kevin_DeBryune"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numChampionsLeagueSpots"/>
+        <NamedIndividual IRI="#Ligue1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#tvRightsRevenue"/>
@@ -1402,9 +1750,28 @@
         <NamedIndividual IRI="#Premier_League"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5100000000</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#canHostEuropeMatches"/>
+        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCapacity"/>
+        <NamedIndividual IRI="#Stadion_Bulgarska_Armia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLeaguePosition"/>
+        <NamedIndividual IRI="#Wycombe_Wanderers"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#competesOn"/>
         <ObjectProperty IRI="#includes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInRoster"/>
+        <ObjectProperty IRI="#playsIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hosts"/>
@@ -1540,7 +1907,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#numChampionsLeagueSpots"/>
-        <Class IRI="#FirstDivisionLeague"/>
+        <Class IRI="#League"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#tvRightsRevenue"/>
