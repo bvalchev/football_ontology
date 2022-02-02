@@ -807,6 +807,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hosts"/>
             <Class IRI="#League"/>
@@ -842,6 +846,10 @@
     <SubClassOf>
         <Class IRI="#HighCapacityStadium"/>
         <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#League"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#League"/>
@@ -887,6 +895,10 @@
     <SubClassOf>
         <Class IRI="#MidtableТeam"/>
         <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Player"/>
@@ -959,12 +971,20 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PlayerRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Playmaker"/>
         <Class IRI="#PlayerRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Poacher"/>
         <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Position"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Position"/>
@@ -1017,6 +1037,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stadium"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadium"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#canHostEuropeMatches"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
@@ -1044,6 +1068,10 @@
     <SubClassOf>
         <Class IRI="#TargetMan"/>
         <Class IRI="#PlayerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Team"/>
@@ -1802,6 +1830,10 @@
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHomelandOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isHostedIn"/>
         <Class IRI="#League"/>
     </ObjectPropertyDomain>
@@ -1840,6 +1872,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isBornIn"/>
         <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHomelandOf"/>
+        <Class IRI="#Player"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isHostedIn"/>
